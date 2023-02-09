@@ -1,9 +1,12 @@
 import React from 'react';
+import HeroSection from '../components/HeroSection';
 
 const Home = () => {
     return (
-        <div className="bg-primary h-screen" >
-                <h2>Hello World</h2>
+        <div className="bg-secondary text-dark  font-primary" >
+               <div className="lg:container lg:px-0 px-5 mx-auto" >
+               <HeroSection/>
+               </div>
         </div>
     );
 };
