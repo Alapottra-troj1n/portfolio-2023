@@ -1,5 +1,4 @@
 import { RouterProvider } from 'react-router-dom'
-import './App.css'
 import routes from './routes/routes'
 import AnimatedCursor from 'react-animated-cursor'
 
@@ -8,9 +7,8 @@ function App() {
 
 
   return (
-    <div>
+    <div className="overflow-y-scroll">
       <AnimatedCursor 
-      color='40, 41, 31'
      innerSize={5}
      outerSize={35}
      innerScale={1}
@@ -19,6 +17,12 @@ function App() {
      clickables={[
       'li', 'a', '.click'
      ]}
+     outerStyle={{
+      backgroundColor: 'var(--cursor-bg-color)'
+    }}
+    innerStyle={{
+      backgroundColor: 'var(--cursor-color)'
+    }}
   
       />
       <RouterProvider router={routes} />
