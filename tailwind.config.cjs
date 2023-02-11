@@ -8,7 +8,8 @@ module.exports = {
         primary: '#CFED71',
         secondary: '#EDE6CD',
         dark: "#28291F",
-        orange: '#E46A44'
+        orange: '#E46A44',
+        green: '#152A21'
   
       }
     },
