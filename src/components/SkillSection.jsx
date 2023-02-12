@@ -1,22 +1,13 @@
+import { BsChevronDoubleDown } from "react-icons/bs";
 import { Tooltip } from "react-tooltip";
+import cursorChange from "../utils/cursorChange";
 
-const SecondSection = ({ secondSectionRef }) => {
-  const cursorChange = (color) => {
-    document.documentElement.style.setProperty(
-      "--cursor-color",
-      `rgba(${color})`
-    );
-    document.documentElement.style.setProperty(
-      "--cursor-bg-color",
-      `rgba(${color}, 0.5)`
-    );
-  };
-
+const SkillSection = ({ SkillSectionRef }) => {
   return (
     <div
+    
+      ref={SkillSectionRef}
       onMouseEnter={() => cursorChange("207, 237, 113")}
-      onMouseLeave={() => cursorChange("40, 41, 31")}
-      ref={secondSectionRef}
       className="bg-dark text-primary px-40"
     >
       <div className="grid lg:grid-cols-2 grid-cols-1">
@@ -25,7 +16,14 @@ const SecondSection = ({ secondSectionRef }) => {
             THESE ARE MY SKILLS
           </h2>
           <div>
-            <img src="/robo-dog.png" alt="" />
+            {/* <img src="/robo-dog.png" alt="" /> */}
+
+            <div className="flex items-cente text-white font-black hover:font-medium">
+              <button className="underline  transition-all text-2xl ">
+                CHECK WHAT I'VE BUILT
+              </button>
+              <BsChevronDoubleDown className="mt-[5px] ml-2 text-2xl " />
+            </div>
           </div>
         </div>
 
@@ -124,13 +122,22 @@ const SecondSection = ({ secondSectionRef }) => {
             </div>
             <div className="flex gap-2 flex-wrap">
               <div>
-                <Tooltip anchorId="material" />
+                <Tooltip anchorId="vuejs" />
                 <img
-                  src="https://skillicons.dev/icons?i=materialui"
-                  id="material"
-                  data-tooltip-content="Material UI"
+                  src="https://skillicons.dev/icons?i=vuejs"
+                  id="vuejs"
+                  data-tooltip-content="Vue.js"
                 />
               </div>
+              <div>
+                <Tooltip anchorId="nuxtjs" />
+                <img
+                  src="https://skillicons.dev/icons?i=nuxtjs"
+                  id="nuxtjs"
+                  data-tooltip-content="Nuxt.js"
+                />
+              </div>
+
               <div>
                 <Tooltip anchorId="sass" />
                 <img
@@ -157,22 +164,13 @@ const SecondSection = ({ secondSectionRef }) => {
               </div>
 
               <div>
-                <Tooltip anchorId="vuejs" />
+                <Tooltip anchorId="material" />
                 <img
-                  src="https://skillicons.dev/icons?i=vuejs"
-                  id="vuejs"
-                  data-tooltip-content="Vue.js"
+                  src="https://skillicons.dev/icons?i=materialui"
+                  id="material"
+                  data-tooltip-content="Material UI"
                 />
               </div>
-              <div>
-                <Tooltip anchorId="nuxtjs" />
-                <img
-                  src="https://skillicons.dev/icons?i=nuxtjs"
-                  id="nuxtjs"
-                  data-tooltip-content="Nuxt.js"
-                />
-              </div>
-            
             </div>
           </div>
           <div className="p-5 rounded-sm bg-slate-200/20 flex flex-col gap-5 lg:gap-0 justify-between">
@@ -285,8 +283,6 @@ const SecondSection = ({ secondSectionRef }) => {
                   data-tooltip-content="Github"
                 />
               </div>
-              
-          
             </div>
           </div>
         </div>
@@ -295,4 +291,4 @@ const SecondSection = ({ secondSectionRef }) => {
   );
 };
 
-export default SecondSection;
+export default SkillSection;

@@ -1,7 +1,7 @@
 import { RouterProvider } from 'react-router-dom';
 import routes from './routes/routes';
 import AnimatedCursor from 'react-animated-cursor';
-
+import '@splidejs/react-splide/css';
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
      outerScale={1.7}
      trailingSpeed={5}
      clickables={[
-      'li', 'a', '.click', 'button', 'img'
+      'li', 'a', '.click', 'button', 'img', '.cursor-hover'
      ]}
      outerStyle={{
       backgroundColor: 'var(--cursor-bg-color)'

@@ -1,15 +1,17 @@
 import React, { useRef } from "react";
 import HeroSection from "../components/HeroSection";
-import SecondSection from "../components/SecondSection";
+import SkillSection from "../components/SkillSection";
+import ThirdSection from "../components/ProjectsSection";
 
 const Home = () => {
-  const secondSectionRef = useRef(null);
+  const SkillSectionRef = useRef(null);
 
   return (
     <div className=" text-dark  font-primary ">
       <div className=" lg:px-0 mx-auto ">
-        <HeroSection secondSectionRef={secondSectionRef} />
-        <SecondSection secondSectionRef={secondSectionRef} />
+        <HeroSection SkillSectionRef={SkillSectionRef} />
+        <SkillSection SkillSectionRef={SkillSectionRef} />
+        <ThirdSection/>
       </div>
     </div>
   );
