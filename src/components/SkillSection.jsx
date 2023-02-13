@@ -25,7 +25,7 @@ const SkillSection = ({ SkillSectionRef,projectSection }) => {
           <div className="lg:flex flex-col hidden ">
          
             <div className="flex items-center text-white gap-3 ">
-              <button onClick={scrolltoProjects} className="xl:text-4xl lg:text-2xl hover:font-black transition-all">
+              <button onClick={scrolltoProjects} className="xl:text-4xl lg:text-2xl font-black hover:font-medium transition-all">
                 CHECK WHAT I'VE BUILT
               </button>
               <BsChevronDoubleDown className="xl:text-4xl lg:text-2xl" />
