@@ -11,7 +11,7 @@ const ProjectsSection = ({ projectSection }) => {
       className=" bg-dark border-t border-gray-500 px-5 lg:px-40 pb-20 text-white"
     >
       <div className="pt-20">
-        <h2 className="text-primary font-display text-5xl lg:text-6xl xl:text-8xl  hover:font-light tracking-tight">
+        <h2 className="text-primary font-display text-5xl lg:text-6xl xl:text-8xl hover:font-light text-center lg:text-left tracking-tight">
           RECENT PROJECTS
         </h2>
 
@@ -79,7 +79,7 @@ const ProjectsSection = ({ projectSection }) => {
                 <a
                   href="https://geek-hive-next-js.vercel.app/"
                   referrerPolicy="no-referrer"
-                  className="hover:font-black hover:text-orange transition-all"
+                  className="hover:font-black hover:text-primary transition-all"
                   target="_blank"
                 >
                   <div className="flex items-center gap-3">
@@ -90,7 +90,7 @@ const ProjectsSection = ({ projectSection }) => {
                 <a
                   href="https://github.com/Alapottra-troj1n/geek-hive-next.js"
                   referrerPolicy="no-referrer"
-                  className="hover:font-black hover:text-orange transition-all"
+                  className="hover:font-black hover:text-primary transition-all"
                   target="_blank"
                 >
                   <div className="flex items-center gap-3">
@@ -118,7 +118,7 @@ const ProjectsSection = ({ projectSection }) => {
                 with admin dashboard and payment gateway
               </h2>
               <img
-                src="/camera.svg"
+                src="/tools.svg"
                 alt="paint3d"
                 className="w-32 lg:w-[15rem]"
               />
