@@ -6,28 +6,28 @@ const Contact = () => {
   return (
     <div
       onMouseEnter={() => cursorChange("40, 41, 31")}
-      className="2xl::h-screen bg-secondary lg:px-40 px-5 py-20 text-dark"
+      className="2xl:h-screen bg-secondary lg:px-40 px-5 py-20 text-dark"
     >
       <div>
         <div className="flex flex-col gap-3 ">
-          <div className="flex items-center gap-3">
+          <a target="_blank" referrerPolicy="no-referrer" href="https://www.linkedin.com/in/alapottra/" className="flex items-center gap-3">
             <h2 className="font-black text-2xl lg:text-6xl  hover:font-light transition-all tracking-tight">
               LINKDIN
             </h2>
             <BsArrowUpRight className="text-2xl lg:text-5xl font-bold" />
-          </div>
-          <div className="flex items-center gap-3">
+          </a>
+          <a target="_blank" referrerPolicy="no-referrer" href="https://github.com/Alapottra-troj1n" className="flex items-center gap-3">
             <h2 className="font-black text-2xl lg:text-6xl  hover:font-light transition-all tracking-tight">
               GITHUB
             </h2>
             <BsArrowUpRight className="text-2xl lg:text-5xl font-bold" />
-          </div>
-          <div className="flex items-center gap-3">
+          </a>
+          <a target="_blank" referrerPolicy="no-referrer" href="https://www.facebook.com/Alapottra" className="flex items-center gap-3">
             <h2 className="font-black text-2xl lg:text-6xl  hover:font-light transition-all tracking-tight">
               FACEBOOK
             </h2>
             <BsArrowUpRight className="text-2xl lg:text-5xl font-bold" />
-          </div>
+          </a>
         </div>
 
         <div className="flex flex-col items-center mt-10 relative">

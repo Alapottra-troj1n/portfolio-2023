@@ -50,7 +50,7 @@ const HeroSection = ({ SkillSectionRef }) => {
             >
               CHECK MY SKILLSET
             </button>
-            <BsChevronDoubleDown className="text-3xl" />
+            <BsChevronDoubleDown onClick={scrolltoSecond} className="text-3xl" />
           </div>
         </div>
       </div>

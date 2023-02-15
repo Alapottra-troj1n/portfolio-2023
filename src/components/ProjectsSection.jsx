@@ -1,7 +1,6 @@
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import cursorChange from "../utils/cursorChange";
-import { useRef } from "react";
 
 const ProjectsSection = ({ projectSection }) => {
   return (
@@ -154,7 +153,7 @@ const ProjectsSection = ({ projectSection }) => {
    
 
         <div className="flex justify-center lg:justify-start items-center gap-3 click">
-          <p className="py-10 text-2xl  lg:text-4xl transition-all hover:font-black">
+          <p className="py-10 text-2xl  lg:text-4xl transition-all font-black hover:font-medium">
             MORE PROJECTS
           </p>
           <BsArrowUpRight className="text-2xl lg:text-3xl" />
