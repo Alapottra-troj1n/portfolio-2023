@@ -19,6 +19,8 @@ const Home = () => {
         />
         <ProjectsSection projectSection={projectSection} />
         <Contact />
+
+        
       </div>
     </div>
   );

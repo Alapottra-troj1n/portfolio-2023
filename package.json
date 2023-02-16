@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.2",
     "@splidejs/react-splide": "^0.7.12",
     "lottie-react": "^2.3.1",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.5.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.1",
     "react-tooltip": "^5.7.5"
   },
