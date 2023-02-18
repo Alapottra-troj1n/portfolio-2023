@@ -4,7 +4,7 @@ import './Spinner.css'
 const Spinner = () => {
     return (
         <div className="h-screen flex justify-center items-center bg-secondary">
-            <div class="lds-facebook"><div></div><div></div><div></div></div>
+            <div className="lds-facebook"><div></div><div></div><div></div></div>
         </div>
     );
 };

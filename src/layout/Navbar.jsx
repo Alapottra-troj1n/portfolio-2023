@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className="flex lg:gap-10 gap-5  flex-wrap" >
                 
                 <Link to='/' ><li className=" cursor-pointer hover:text-orange">Home</li></Link>
-                <Link to='/blog' ><li className=" cursor-pointer hover:text-orange">Blog</li></Link>
+                <Link to='/journal' ><li className=" cursor-pointer hover:text-orange">Journal</li></Link>
                 <li className=" cursor-pointer hover:text-orange"> <a href="mailto:alapottratrojon@gmail.com">Conact</a></li>
                
             </div>

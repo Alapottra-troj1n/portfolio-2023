@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       onMouseEnter={() => cursorChange("40, 41, 31")}
-      className="2xl:h-screen bg-secondary lg:px-40 px-5 py-20 text-dark"
+      className="2xl:h-screen bg-secondary lg:px-40 px-5 py-24 text-dark"
     >
       <div>
         <div className="flex flex-col gap-3 ">

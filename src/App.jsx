@@ -9,8 +9,8 @@ import { setLoading } from "./features/appSlice/appSlice";
 
 function App() {
   const dispatch = useDispatch();
-
   useEffect(() => {
+    
     dispatch(setLoading(false));
   }, []);
 
