@@ -7,7 +7,7 @@ const LoadWrapper = ({children}) => {
     const { isLoading }  = useSelector(state => state.app)
 
     if(isLoading) {
-        return <Spinner/>
+        return <div className="h-screen flex justify-center items-center bg-secondary"><Spinner/> </div>
     }
 
     console.log(isLoading)

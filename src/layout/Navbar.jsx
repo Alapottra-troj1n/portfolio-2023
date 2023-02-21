@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
 
 const Navbar = () => {
+    const location = useLocation();
+
     return (
-        <header className="absolute list-none text-dark font-display px-6 pt-4 lg:text-3xl text-lg flex justify-center w-full">
+        <header className={`absolute list-none ${location.pathname.includes('/journal') ? 'bg-dark text-white' : 'bg-secondary'} font-display px-6 pt-4 lg:text-3xl text-lg flex justify-center w-full`}>
 
             <div className="flex lg:gap-10 gap-5  flex-wrap" >
                 

@@ -26,7 +26,18 @@ const HeroSection = ({ SkillSectionRef }) => {
               client's needs and translating them into effective and impactful
               products.
             </p>
+            <div className="mt-3 flex flex-col gap-3 text-xs lg:text-base">
+                <div className="flex items-center gap-3 font-bold  text-gray-600">
+                  <img src="/creeper.svg" className='w-8' alt="creeper" />
+                  <p>Crafting Solutions <a href="https://connekt.studio/" target="_blank" referrerPolicy="no-referrer"><span className="hover:text-orange text-gray-900">@CONNECKT STUDIO</span></a></p>
+                </div>
+                <div className="flex items-center gap-3 font-bold  text-gray-600">
+                  <img src="/book.svg" className='w-8' alt="creeper" />
+                  <p>Pursuing CS Degree <a href="https://www.uopeople.edu/" target="_blank" referrerPolicy="no-referrer"><span className="hover:text-orange text-gray-900">@University of the People</span></a></p>
+                </div>
+            </div>
           </div>
+          
           <div className="flex justify-end items-center order-1 lg:order-2">
             <img
               src="/alapottra.jpg"
@@ -41,7 +52,7 @@ const HeroSection = ({ SkillSectionRef }) => {
               <img
                 src="/fire.svg"
                 className="lg:w-16 w-12 mt-2"
-                alt="minecrat creeper"
+                alt="fireminecrat creeper"
               />
             </div>
             <button

@@ -1,27 +1,47 @@
 import React from "react";
 import { useGetAllJournalQuery } from "../features/journal/journalApi";
 import Spinner from "../components/reusables/Spinner";
-import { PortableText } from "@portabletext/react";
-import { textSerializer } from "../utils/textSerializer";
+import cursorChange from "../utils/cursorChange";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Journal = () => {
   const { data, error, isLoading } = useGetAllJournalQuery();
-  console.log(data);
 
+  useEffect(() => {
+    cursorChange("207, 237, 113");
+  }, []);
+  const sortedPosts = [...(data?.result ?? [])].sort(
+    (a, b) => new Date(b._createdAt) - new Date(a._createdAt)
+  );
   if (isLoading) {
-    return <Spinner />;
+    return (
+      <div className="h-screen flex justify-center items-center bg-dark">
+        <Spinner />
+      </div>
+    );
   }
 
-
   return (
-    <div className=" bg-secondary">
-      <div className="px-40 pt-40 font-primary">
-        <div className="flex flex-col gap-5">
-          {data.result.map((post) => (
-            <div className="h-40 bg-red-400">{post.title}</div>
-          ))}
-
-          <PortableText components={textSerializer} value={data.result[0].body} />
+    <div className="bg-dark text-gray-200 min-h-screen">
+      <div className="lg:px-40 px-8 py-40 font-primary">
+        <div className="flex flex-col gap-10">
+          {sortedPosts.map((post) => {
+            const createdAt = new Date(post._createdAt).toLocaleString();
+            return (
+              <Link to={`/journal/${post.slug.current}`}>
+                <div className=" py-10 border-b transition-all border-white  hover:border-primary hover:text-primary">
+                  <h2 className="lg:text-2xl text-lg mb-2 font-semibold ">
+                    {post.title}
+                  </h2>
+                  <div>
+                    <h4 className="text-sm">Written by : {post.author.name}</h4>
+                    <h4 className="text-sm">Published at : {createdAt}</h4>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </div>
