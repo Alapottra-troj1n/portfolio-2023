@@ -2,45 +2,28 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import { Tooltip } from "react-tooltip";
 import cursorChange from "../utils/cursorChange";
 
-const SkillSection = ({ SkillSectionRef,projectSection }) => {
-
-  const scrolltoProjects = () => {
-    projectSection.current.scrollIntoView({ behavior: "smooth" });
-  };
-
+const SkillSection = ({ SkillSectionRef, projectSection }) => {
 
   return (
     <div
       ref={SkillSectionRef}
       onMouseEnter={() => cursorChange("207, 237, 113")}
-      className="bg-dark text-primary px-5 lg:px-5 xl:px-40 "
+      className="bg-dark text-primary px-5 lg:px-40 2xl:px-5 py-10 "
     >
-      <div className="grid lg:grid-cols-2 grid-cols-1">
-        <div className="xl:h-screen flex flex-col justify-between lg:pt-20 lg:pb-20 py-10">
-          <h2 className="text-primary font-display lg:text-7xl xl:text-8xl text-center lg:text-left text-5xl  hover:font-light tracking-tight">
-            THESE ARE MY SKILLS
-          </h2>
-        
+      <h2 className="text-primary font-display lg:text-7xl xl:text-8xl text-center text-5xl  hover:font-light tracking-tight">
+        THESE ARE MY SKILLS
+      </h2>
+      <div className="grid grid-cols-1">
+     
 
-          <div className="lg:flex flex-col hidden ">
-         
-            <div className="flex items-center text-white gap-3 ">
-              <button onClick={scrolltoProjects} className="xl:text-4xl lg:text-2xl font-black hover:font-medium transition-all">
-                CHECK WHAT I'VE BUILT
-              </button>
-              <BsChevronDoubleDown className="xl:text-4xl lg:text-2xl" />
-            </div>
-          </div>
-        </div>
-
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 py-10 lg:pt-20 lg:pb-20 ">
-          <div className="p-5 rounded-sm bg-slate-200/20 flex flex-col gap-5 lg:gap-4 xl:gap-0 justify-between">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 py-10 lg:py-10  ">
+          <div className="p-8 rounded-lg bg-slate-200/20 flex flex-col gap-5 lg:gap-24 xl:gap-7 2xl:gap-0 justify-between">
             <div>
               <h2 className="font-primary font-black text-3xl text-white tracking-wide hover:font-light transition-all">
                 Expertise
               </h2>
 
-              <p className="text-gray-300 text-sm font-bold tracking-wide leading-7 mt-4">
+              <p className="text-gray-300 text-sm font-semibold tracking-wide leading-7 mt-4">
                 These are the technologies I excel at. Let me bring my best
                 efforts to your project and work towards delivering exceptional
                 results.
@@ -53,7 +36,6 @@ const SkillSection = ({ SkillSectionRef,projectSection }) => {
                 <img
                   src="https://skillicons.dev/icons?i=js"
                   id="js"
-                  
                   data-tooltip-content="Javascript"
                 />
               </div>
@@ -105,23 +87,16 @@ const SkillSection = ({ SkillSectionRef,projectSection }) => {
                   data-tooltip-content="Node & Express.js"
                 />
               </div>
-              <div>
-                <Tooltip anchorId="firebase" />
-                <img
-                  src="https://skillicons.dev/icons?i=firebase"
-                  id="firebase"
-                  data-tooltip-content="Firebase"
-                />
-              </div>
+            
             </div>
           </div>
-          <div className="p-5 rounded-sm bg-slate-200/20 flex flex-col gap-5  lg:gap-4 xl:gap-0 justify-between">
+          <div className="p-8 rounded-lg bg-slate-200/20 flex flex-col gap-5 lg:gap-24 xl:gap-7 2xl:gap-0 justify-between">
             <div>
               <h2 className="font-primary font-black text-3xl text-white tracking-wide hover:font-light transition-all">
                 Comfortable
               </h2>
 
-              <p className="text-gray-300 text-sm leading-7 font-bold tracking-wide mt-4">
+              <p className="text-gray-300 text-sm font-semibold tracking-wide leading-7 mt-4">
                 I am also proficient in other technologies. My ability to learn
                 and adapt quickly allows me to effectively contribute to new
                 projects.
@@ -178,15 +153,23 @@ const SkillSection = ({ SkillSectionRef,projectSection }) => {
                   data-tooltip-content="Material UI"
                 />
               </div>
+              <div>
+                <Tooltip anchorId="python" />
+                <img
+                  src="https://skillicons.dev/icons?i=python"
+                  id="python"
+                  data-tooltip-content="Python"
+                />
+              </div>
             </div>
           </div>
-          <div className="p-5 rounded-sm bg-slate-200/20 flex flex-col gap-5 lg:gap-4 xl:gap-0 justify-between">
+          <div className="p-8 rounded-lg bg-slate-200/20 flex flex-col gap-5 lg:gap-24 xl:gap-7 2xl:gap-0 justify-between">
             <div className="flex gap-2 flex-wrap">
               <h2 className="font-primary font-black text-3xl  text-white tracking-wide hover:font-light transition-all">
                 Familiar
               </h2>
 
-              <p className="text-gray-300 text-sm leading-7 font-bold tracking-wide mt-4">
+              <p className="text-gray-300 text-sm font-semibold tracking-wide leading-7 mt-4">
                 I am eager to continue learning and expanding my skill set, and
                 am confident that my familiarity with these technologies will be
                 an asset to your team.
@@ -195,11 +178,11 @@ const SkillSection = ({ SkillSectionRef,projectSection }) => {
 
             <div className="flex gap-2 flex-wrap">
               <div>
-                <Tooltip anchorId="python" />
+                <Tooltip anchorId="java" />
                 <img
-                  src="https://skillicons.dev/icons?i=python"
-                  id="python"
-                  data-tooltip-content="Python"
+                  src="https://skillicons.dev/icons?i=java"
+                  id="java"
+                  data-tooltip-content="Java"
                 />
               </div>
               <div>
@@ -226,15 +209,23 @@ const SkillSection = ({ SkillSectionRef,projectSection }) => {
                   data-tooltip-content="Webflow"
                 />
               </div>
+              <div>
+                <Tooltip anchorId="fastapi" />
+                <img
+                  src="https://skillicons.dev/icons?i=fastapi"
+                  id="fastapi"
+                  data-tooltip-content="FastApi"
+                />
+              </div>
             </div>
           </div>
-          <div className="p-5 rounded-sm bg-slate-200/20 flex flex-col gap-5 lg:gap-4 xl:gap-0 justify-between">
+          <div className="p-8 rounded-lg bg-slate-200/20 flex flex-col gap-5 lg:gap-24 xl:gap-7 2xl:gap-0 justify-between">
             <div className="flex gap-2 flex-wrap">
               <h2 className="font-primary font-black text-3xl text-white tracking-wide hover:font-light transition-all">
                 Tools
               </h2>
 
-              <p className="text-gray-300 text-sm font-bold tracking-wide  leading-7 mt-4">
+              <p className="text-gray-300 text-sm font-semibold tracking-wide leading-7 mt-4">
                 Comfortable with various tools, able to navigate and use
                 effectively. Continuously improving knowledge. This adds value
                 to projects and team.
@@ -288,6 +279,14 @@ const SkillSection = ({ SkillSectionRef,projectSection }) => {
                   src="https://skillicons.dev/icons?i=github"
                   id="github"
                   data-tooltip-content="Github"
+                />
+              </div>
+              <div>
+                <Tooltip anchorId="firebase" />
+                <img
+                  src="https://skillicons.dev/icons?i=firebase"
+                  id="firebase"
+                  data-tooltip-content="Firebase"
                 />
               </div>
             </div>
