@@ -11,7 +11,7 @@ const Navbar = () => {
                 
                 <Link to='/' ><li className=" cursor-pointer hover:text-orange">Home</li></Link>
                 <Link to='/journal' ><li className=" cursor-pointer hover:text-orange">Journal</li></Link>
-                <li className=" cursor-pointer hover:text-orange"> <a href="mailto:alapottratrojon@gmail.com">Conact</a></li>
+                <li className=" cursor-pointer hover:text-orange"> <a href="mailto:alapottratrojon@gmail.com">Contact</a></li>
                
             </div>
 
