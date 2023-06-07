@@ -11,7 +11,7 @@ const JournalPage = () => {
     return (
         <div className="min-h-screen bg-dark text-white">
            <div className="lg:px-40 px-8 py-40 font-primary">
-           <h2 className="tex-7xl">sadsa</h2>
+           <h2 className="tex-7xl">Work on Progress</h2>
            </div>
         </div>
     );

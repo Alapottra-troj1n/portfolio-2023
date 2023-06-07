@@ -153,9 +153,9 @@ const ProjectsSection = ({ projectSection }) => {
    
 
         <div className="flex justify-center lg:justify-start items-center gap-3 click">
-          <p className="py-10 text-2xl  lg:text-4xl transition-all font-black hover:font-medium">
+         <a href="https://github.com/Alapottra-troj1n" target="_blank"> <p className="py-10 text-2xl  lg:text-4xl transition-all font-black hover:font-medium">
             MORE PROJECTS
-          </p>
+          </p></a>
           <BsArrowUpRight className="text-2xl lg:text-3xl" />
         </div>
       </div>
