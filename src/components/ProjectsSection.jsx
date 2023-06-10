@@ -7,7 +7,7 @@ const ProjectsSection = ({ projectSection }) => {
     <div
       onMouseEnter={() => cursorChange("207, 237, 113")}
       ref={projectSection}
-      className=" bg-dark border-t border-gray-500 px-7 lg:px-16 2xl:px-5 pb-20 text-white"
+      className=" bg-dark border-t border-gray-500 px-7 lg:px-16  pb-20 text-white"
     >
       <div className="pt-20">
         <h2 className="text-primary font-display text-5xl lg:text-6xl xl:text-8xl hover:font-light text-center tracking-tight">
@@ -62,8 +62,8 @@ const ProjectsSection = ({ projectSection }) => {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-lg gap-10 mt-10 bg-orange text-white lg:bg-dark lg:text-white lg:hover:bg-orange lg:hover:text-white transition">
-          <div className=" border rounded-lg border-orange lg:border-white p-8 lg:p-20">
+        <div className="flex flex-col rounded-lg gap-10 mt-10 bg-orange text-white lg:bg-dark lg:text-white lg:hover:bg-orange  lg:hover:text-white transition">
+          <div className=" border rounded-lg border-orange lg:border-white lg:hover:border-orange p-8 lg:p-20">
             <div className="flex flex-col items-center">
               <h2 className="font-display text-center text-[2.3rem]  lg:text-[4rem] xl:text-[6rem] 2xl:text-[10rem]">
                 GEEK HIVE
@@ -107,7 +107,7 @@ const ProjectsSection = ({ projectSection }) => {
           onMouseLeave={() => cursorChange("207, 237, 113")}
           className="flex  rounded-lg flex-col gap-10 mt-10 bg-primary text-dark lg:bg-dark lg:text-white lg:hover:bg-primary lg:hover:text-dark transition"
         >
-          <div className=" border rounded-lg border-primary lg:border-white p-8 lg:p-20">
+          <div className=" border rounded-lg border-primary lg:border-white lg:hover:border-primary p-8 lg:p-20">
             <div className="flex flex-col items-center">
               <h2 className="font-display text-center text-[2.3rem]  lg:text-[4rem] xl:text-[6rem] 2xl:text-[10rem]">
                 IGNITION

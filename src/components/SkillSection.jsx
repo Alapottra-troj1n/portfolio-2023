@@ -8,7 +8,7 @@ const SkillSection = ({ SkillSectionRef, projectSection }) => {
     <div
       ref={SkillSectionRef}
       onMouseEnter={() => cursorChange("207, 237, 113")}
-      className="bg-dark text-primary px-5 lg:px-40 2xl:px-5 py-10 "
+      className="bg-dark text-primary px-5 lg:px-40  py-10 "
     >
       <h2 className="text-primary font-display lg:text-7xl xl:text-8xl text-center text-5xl  hover:font-light tracking-tight">
         THESE ARE MY SKILLS
